@@ -1,0 +1,13 @@
+- to unistall npm package like uuid: npm unistall uuid
+- to install passport and jwt packages: npm install @nest/jwt @nset/passport passport passport-jwt
+- to apply configuratio we need to run npm install config and npm install -g win-node-env (config use env variable) 
+  configuration expects a config folder at root of application with some file in it
+- for each env we can define a yaml/json/xml, ... files
+- sensitive info is better to picked up from environment variable config and not code base (files in config folder)
+- config package user NODE_END to define which environment (development, production, ...) we are in. if that
+  file does not exists the environment is development and it user file with development name to pick configs
+- for config, default.yaml file is available in different environment and will be overriden by other files in 
+  different environment
+- before deployment we need to make 2 changes in package.json
+  1) change start:prod to "start:prod": "NODE_ENV=production node dist/main"
+  2) copy 4 dependencies from devDependencies to dependencies as some clould providers install packages from production dependecies not devDependencies 
