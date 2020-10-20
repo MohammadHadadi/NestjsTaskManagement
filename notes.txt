@@ -11,3 +11,6 @@
 - before deployment we need to make 2 changes in package.json
   1) change start:prod to "start:prod": "NODE_ENV=production node dist/main"
   2) copy 4 dependencies from devDependencies to dependencies as some clould providers install packages from production dependecies not devDependencies 
+
+- VERY IMPORTANT: in order to deploy to Amazon elastic beanstalk, we need to add a Procfile and the specified command in it.
+- use npm run build to build the front-end app
