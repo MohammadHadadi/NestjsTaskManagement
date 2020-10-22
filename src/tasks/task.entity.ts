@@ -24,5 +24,5 @@ export class Task extends BaseEntity{
     userId: number;  // generated automatically for us on database after ManyToOne relation added
 
     // add some test comment
-    // some more changes
+    
 }
