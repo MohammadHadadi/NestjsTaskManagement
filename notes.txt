@@ -15,3 +15,4 @@
 - VERY IMPORTANT: in order to deploy to Amazon elastic beanstalk, we need to add a Procfile and the specified command in it.
 - use npm run build to build the front-end app
 - git remote add origin --gitUrl // this command add all files from local repository to remote repository on GitHub
+  we need to call git push origin master (asks for credentials)
