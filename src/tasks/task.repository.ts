@@ -9,6 +9,7 @@ import { InternalServerErrorException, Logger } from "@nestjs/common";
 @EntityRepository(Task)
 export class TaskRepository extends Repository<Task>{
 
+    // add some comment for test git on Azure
     private logger = new Logger('TaskRepository'); // use logging this way, is done by creating a variable
 
     async getTasks(filterDto: GetTasksFilterDto, user: User): Promise<Task[]>{
